@@ -19,11 +19,11 @@ export function createWalls(scene, textureLoader) {
 
   const wallMaterial = new THREE.MeshStandardMaterial({
     map: colorTexture,
-    // normalMap: normalTexture,
+
     roughnessMap: roughnessTexture,
     side: THREE.DoubleSide,
   });
-  // Front Wall
+
   const frontWall = new THREE.Mesh(
     new THREE.BoxGeometry(80, 20, 0.001),
     wallMaterial
@@ -31,7 +31,6 @@ export function createWalls(scene, textureLoader) {
 
   frontWall.position.z = -20;
 
-  // Left Wall
   const leftWall = new THREE.Mesh(
     new THREE.BoxGeometry(80, 20, 0.001),
     wallMaterial
@@ -40,7 +39,6 @@ export function createWalls(scene, textureLoader) {
   leftWall.rotation.y = Math.PI / 2;
   leftWall.position.x = -20;
 
-  // Right Wall
   const rightWall = new THREE.Mesh(
     new THREE.BoxGeometry(80, 20, 0.001),
     wallMaterial

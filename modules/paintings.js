@@ -7,7 +7,6 @@ export function createPaintings(scene, textureLoader) {
 
   paintingData.forEach((data) => {
     const plane = new THREE.PlaneGeometry(data.width, data.height, 5);
-    // const plane = new THREE.Mesh({});
     const painting = new THREE.Mesh(
       plane,
       new THREE.MeshLambertMaterial({ map: textureLoader.load(data.imgSrc) })

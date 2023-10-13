@@ -4,7 +4,6 @@ import floortTexture from "../public/WoodFlooringAshSuperWhite001/WoodFlooringAs
 export const setupFloor = (scene) => {
   const textureLoader = new THREE.TextureLoader();
 
-  // Load the textures
   const colorTexture = textureLoader.load(
     "WoodFlooringAshSuperWhite001/WoodFlooringAshSuperWhite001_COL_2K.jpg"
   );
@@ -21,7 +20,6 @@ export const setupFloor = (scene) => {
     "WoodFlooringAshSuperWhite001/WoodFlooringAshSuperWhite001_AO_2K.jpg"
   );
 
-  // Set texture parameters
   colorTexture.wrapS = colorTexture.wrapT = THREE.RepeatWrapping;
   displacementTexture.wrapS = displacementTexture.wrapT = THREE.RepeatWrapping;
   normalTexture.wrapS = normalTexture.wrapT = THREE.RepeatWrapping;
