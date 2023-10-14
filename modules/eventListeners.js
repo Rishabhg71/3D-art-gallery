@@ -54,7 +54,6 @@ function onKeyDown(event, controls) {
 
   if (event.key === "Enter" || event.key === "Return") {
     controls.lock();
-    w;
     lockPointer = true;
   }
 
